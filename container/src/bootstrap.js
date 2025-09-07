@@ -1,4 +1,5 @@
 import 'products/ProductsIndex';
+import 'cart/CartShow';
 // products. when we build, webpack is gonna see were trying to import a module called products.
 // if not in node modules
 // will look in module federation plugin. the remote section.
