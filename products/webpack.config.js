@@ -6,10 +6,15 @@ module.exports = {
     port: 8081
   },
   plugins: [
+    // 
     new ModuleFederationPlugin({
+      // name of the manifest. linked to products@ in container
       name: 'products',
+      // filename controlls remoteEntry.js file
       filename: 'remoteEntry.js',
+      // contorls which modules to expose
       exposes: {
+        // alias / proxy
         './ProductsIndex': './src/index'
       }
     }),
