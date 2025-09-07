@@ -1,5 +1,5 @@
-import 'products/ProductsIndex';
-import 'cart/CartShow';
+import { mount as productsMount } from 'products/ProductsIndex';
+import { mount as cartMount } from 'cart/CartShow';
 // products. when we build, webpack is gonna see were trying to import a module called products.
 // if not in node modules
 // will look in module federation plugin. the remote section.
@@ -14,3 +14,7 @@ console.log("Container!!!")
 // remotes: {
 //   products: 'products@http://localhost:8081/remoteEntry.js'
 // }
+
+
+productsMount(document.querySelector('#my-products'))
+cartMount(document.querySelector('#my-cart'))

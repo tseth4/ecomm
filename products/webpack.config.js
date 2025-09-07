@@ -15,7 +15,7 @@ module.exports = {
       // contorls which modules to expose
       exposes: {
         // alias / proxy
-        './ProductsIndex': './src/index'
+        './ProductsIndex': './src/bootstrap'
       },
       shared: ['faker']
     }),
