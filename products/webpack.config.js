@@ -16,7 +16,8 @@ module.exports = {
       exposes: {
         // alias / proxy
         './ProductsIndex': './src/index'
-      }
+      },
+      shared: ['faker']
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html'
